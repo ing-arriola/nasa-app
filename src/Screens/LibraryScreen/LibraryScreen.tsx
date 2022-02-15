@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 import { dataApi } from "../../Api/nasaApi";
 import DisplayInformation from "./DisplayInformation";
