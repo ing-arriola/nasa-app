@@ -1,7 +1,7 @@
 import React from "react";
-import { ItemLink } from "../interfaces/search";
+import { ItemLink } from "../../interfaces/search";
 
-import nasa from "../assets/nasa-logo.svg";
+import nasa from "../../assets/nasa-logo.svg";
 
 interface Props {
   links?: ItemLink[];
@@ -18,7 +18,7 @@ const Image = ({ links }: Props) => {
     <>
       {links
         ? links.map((link) => (
-            <div key={link.href}>
+            <div className="d-flex justify-content-center" key={link.href}>
               {link.href.endsWith("jpg") && (
                 <img
                   src={link.href}

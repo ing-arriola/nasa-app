@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import App from "./App";
-import ImageLibrary from "./Screens/ImageLibrary";
+import LibraryScreen from "./Screens/LibraryScreen/LibraryScreen";
 import Navbar from "./components/NavBar";
 import Header from "./components/Header";
 import ApodScreen from "./Screens/Apod/ApodScreen";
@@ -16,7 +16,7 @@ ReactDOM.render(
     <Header />
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/images" element={<ImageLibrary />} />
+      <Route path="/images" element={<LibraryScreen />} />
       <Route path="/apod" element={<ApodScreen />} />
       <Route path="/rover" element={<RoverScreen />} />
     </Routes>

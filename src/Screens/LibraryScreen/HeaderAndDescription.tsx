@@ -1,5 +1,5 @@
 import React from "react";
-import { Datum } from "../interfaces/search";
+import { Datum } from "../../interfaces/search";
 
 interface Props {
   data: Datum[];
