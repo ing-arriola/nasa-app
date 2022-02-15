@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Container } from "react-bootstrap";
 import { commonAPI } from "../../Api/nasaApi";
 import { RoversData } from "../../interfaces/rovers";
 
@@ -15,7 +16,11 @@ const RoverScreen = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return <div>RoverScreen</div>;
+  return (
+    <Container className="d-flex justify-content-center">
+      <h2> Page under construction...</h2>
+    </Container>
+  );
 };
 
 export default RoverScreen;
