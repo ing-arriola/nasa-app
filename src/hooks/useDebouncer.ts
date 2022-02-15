@@ -11,7 +11,7 @@ export const useDebouncer = ( input: string = '' , time: number = 500 ) => {
         return () =>{
             clearTimeout(timer)
         }
-        //react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [input])
 
     return debouncedValue;
